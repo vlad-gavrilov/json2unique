@@ -1,0 +1,30 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json2unique"
+version = "1.0.0"
+description = "Parses the json document into a list of unique elements"
+readme = "README.md"
+authors = [{name = "Vlad Gavrilov"}]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["json", "parser", "cli"]
+
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+build = ["build", "twine"]
+dev   = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/vlad-gavrilov/json2unique"
+"Bug Tracker" = "https://github.com/vlad-gavrilov/json2unique/issues"
+
+[project.scripts]
+json2unique = "json2unique.__main__:main"

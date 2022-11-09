@@ -1,0 +1,13 @@
+.idea/
+.DS_Store
+
+venv/
+
+dist/
+src/json2unique.egg-info/
+src/json2unique/__pycache__/
+
+requirements.txt
+
+tests/__pycache__/
+.pytest_cache
